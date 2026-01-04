@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Explorer | Readify</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="book-explorer.css">
+</head>
+<body>
+
+<!-- STANDARD NAVBAR -->
+<nav class="navbar">
+  <div class="logo">Readify</div>
+
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book-explorer.html">Book Explorer</a></li>
+    <li><a href="progress.html">Progress Tracker</a></li>
+    <li><a href="recommender.html">Recommender</a></li>
+    <li><a href="reading-flow.html">Reading Flow</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <h1>Book Explorer</h1>
+  <p>Search and explore books you may enjoy.</p>
+</section>
+
+<!-- FILTERS -->
+<section class="filters">
+  <input type="text" id="searchInput" placeholder="Search by title or author">
+  <select id="genreFilter">
+    <option value="all">All Genres</option>
+    <option value="Business">Business</option>
+    <option value="Romance">Romance</option>
+    <option value="Fantasy">Fantasy</option>
+  </select>
+</section>
+
+<!-- BOOK CARDS -->
+<section class="books-container" id="booksContainer"></section>
+
+<!-- MODAL -->
+<div class="modal" id="bookModal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <img id="modalImage" alt="Book Cover">
+    <h2 id="modalTitle"></h2>
+    <p id="modalAuthor"></p>
+
+    <h3>Synopsis</h3>
+    <p id="modalSynopsis"></p>
+
+    <h3>Sequels / Prequels</h3>
+    <ul id="modalSequels"></ul>
+
+    <h3>Ratings & Reviews</h3>
+    <table>
+      <tr>
+        <th>Source</th>
+        <th>Rating</th>
+      </tr>
+      <tbody id="modalRatings"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- STANDARD FOOTER -->
+<footer>
+  <div>
+    <h3>Readify</h3>
+    <p>Discover books and enjoy reading every day.</p>
+  </div>
+
+  <div>
+    <h3>Newsletter</h3>
+    <input type="email" id="newsletterEmail" placeholder="Enter email">
+    <button id="subscribeBtn">Subscribe</button>
+    <p id="subscribeMsg"></p>
+  </div>
+</footer>
+
+<script src="book-explorer.js"></script>
+</body>
+</html>

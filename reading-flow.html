@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Reading Flow</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="reading-flow.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h1 class="logo">Readify</h1>
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book-explorer.html">Book Explorer</a></li>
+    <li><a href="progress.html">Progress Tracker</a></li>
+    <li><a href="recommender.html">Recommender</a></li>
+    <li><a href="reading-flow.html" class="active">Reading Flow</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <h1>Reading Flow</h1>
+  <p>Create a calm reading environment and track completed books.</p>
+</section>
+
+<section class="reading-content">
+  <h2>Choose a Book</h2>
+
+<select id="bookSelect">
+  <option value="">-- Select a book --</option>
+  <option value="richdad">Rich Dad Poor Dad</option>
+  <option value="winfriends">How to Win Friends & Influence People</option>
+  <option value="shoedog">Shoe Dog</option>
+  <option value="heatedrivalry">Heated Rivalry</option>
+  <option value="terms">Terms and Conditions</option>
+  <option value="loseguy">How to Lose a Guy in 10 Days</option>
+  <option value="fourthwing">Fourth Wing</option>
+  <option value="alchemised">Alchemised</option>
+  <option value="acotar">A Court of Thorns and Roses</option>
+</select>
+
+
+  <div class="book-display">
+    <h3 id="bookTitle"></h3>
+    <p id="bookText"></p>
+  </div>
+</section>
+
+
+<!-- SOUND CONTROLS -->
+<section class="flow-section">
+  <h2>Cozy Sounds</h2>
+  <button id="playSound">Play Cozy Sound</button>
+  <button id="stopSound">Stop Sound</button>
+
+  <audio id="cozyAudio" loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+  </audio>
+</section>
+
+<!-- COMPLETED BOOKS -->
+<section class="flow-section">
+  <h2>Completed Books</h2>
+
+  <input type="text" id="bookInput" placeholder="Enter book title">
+  <button id="addBook">Add Book</button>
+
+  <ul id="completedList"></ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <h3>Readify</h3>
+    <p>Discover books and enjoy reading every day.</p>
+  </div>
+
+  <div>
+    <h3>Newsletter</h3>
+    <input type="email" id="newsletterEmail" placeholder="Enter email">
+    <button id="subscribeBtn">Subscribe</button>
+    <p id="newsletterMsg"></p>
+  </div>
+</footer>
+
+<script src="reading-flow.js"></script>
+</body>
+</html>

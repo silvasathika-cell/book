@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Recommender</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="recommender.css">
+</head>
+<body>
+
+<!-- NAVBAR (STANDARD – SAME AS HOME) -->
+<nav class="navbar">
+  <h1 class="logo">Readify</h1>
+
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book-explorer.html">Book Explorer</a></li>
+    <li><a href="progress.html">Progress Tracker</a></li>
+    <li><a href="recommender.html" class="active">Recommender</a></li>
+    <li><a href="reading-flow.html">Reading Flow</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="page-hero">
+  <h1>Random Book Recommender</h1>
+  <p>Let us pick your next read!</p>
+</section>
+
+<!-- RECOMMENDER -->
+<section class="recommender">
+  <div class="controls">
+    <select id="genreSelect">
+      <option value="all">All Genres</option>
+      <option value="Business">Business</option>
+      <option value="Romance">Romance</option>
+      <option value="Fantasy">Fantasy</option>
+    </select>
+
+    <select id="lengthSelect">
+      <option value="all">Any Length</option>
+      <option value="short">Short</option>
+      <option value="medium">Medium</option>
+      <option value="long">Long</option>
+    </select>
+
+    <button id="pickBtn">Recommend Book</button>
+  </div>
+
+  <div class="result" id="result">
+    <h2 id="bookTitle">No book selected</h2>
+    <p id="bookAuthor"></p>
+    <p id="bookInfo"></p>
+  </div>
+
+  <div class="actions">
+    <button id="pickAgainBtn">Pick Again</button>
+    <button id="saveBtn">Save to Reading List</button>
+    <p id="message"></p>
+  </div>
+</section>
+
+<!-- FOOTER (STANDARD – SAME AS HOME) -->
+<footer>
+  <div>
+    <h3>Readify</h3>
+    <p>Discover books and enjoy reading every day.</p>
+  </div>
+
+  <div>
+    <h3>Newsletter</h3>
+    <input type="email" id="newsletterEmail" placeholder="Enter email">
+    <button id="subscribeBtn">Subscribe</button>
+    <p id="newsletterMessage"></p>
+  </div>
+</footer>
+
+<script src="recommender.js"></script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Feedback</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h1 class="logo">Readify</h1>
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book-explorer.html">Book Explorer</a></li>
+    <li><a href="progress.html">Progress Tracker</a></li>
+    <li><a href="recommender.html">Recommender</a></li>
+    <li><a href="reading-flow.html">Reading Flow</a></li>
+    <li><a href="feedback.html" class="active">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <h1>Feedback</h1>
+  <p>We’d love to hear your thoughts!</p>
+</section>
+
+<!-- FEEDBACK FORM -->
+<section class="feedback-section">
+  <form id="feedbackForm">
+
+    <label>Name</label>
+    <input type="text" id="name" required>
+
+    <label>Email</label>
+    <input type="email" id="email" required>
+
+    <label>Message</label>
+    <textarea id="message" rows="5" required></textarea>
+
+    <button type="submit">Submit Feedback</button>
+
+    <p id="confirmMsg"></p>
+  </form>
+</section>
+
+<!-- FAQ ACCORDION -->
+<section class="faq-section">
+  <h2>FAQ</h2>
+
+  <div class="faq-item">
+    <button class="faq-question">Is Readify free to use?</button>
+    <div class="faq-answer">
+      <p>Yes, Readify is completely free for all users.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Can I save my reading progress?</button>
+    <div class="faq-answer">
+      <p>Yes, progress is saved using your browser’s local storage.</p>
+    </div>
+  </div>
+
+  <div class="faq-item">
+    <button class="faq-question">Do I need an account?</button>
+    <div class="faq-answer">
+      <p>No account is required to use Readify.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div>
+    <h3>Readify</h3>
+    <p>Discover books and enjoy reading every day.</p>
+  </div>
+
+  <div class="footer-right">
+    <h3>Newsletter</h3>
+    <div class="newsletter-row">
+      <input type="email" id="newsletterEmail" placeholder="Enter email">
+      <button id="subscribeBtn">Subscribe</button>
+    </div>
+    <p id="newsletterMsg"></p>
+  </div>
+</footer>
+
+<script src="feedback.js"></script>
+</body>
+</html>

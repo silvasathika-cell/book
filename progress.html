@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Readify | Reading Progress</title>
+  <link rel="icon" type="image/png" href="img/icon.png">
+  <link rel="stylesheet" href="progress.css">
+</head>
+<body>
+
+<!-- NAVBAR (SAME AS HOME) -->
+<nav class="navbar">
+  <h1 class="logo">Readify</h1>
+
+  <div class="hamburger" id="hamburger">☰</div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="book-explorer.html">Book Explorer</a></li>
+    <li><a href="progress.html">Progress Tracker</a></li>
+    <li><a href="recommender.html">Recommender</a></li>
+    <li><a href="reading-flow.html">Reading Flow</a></li>
+    <li><a href="feedback.html">Feedback</a></li>
+  </ul>
+</nav>
+
+<!-- PAGE TITLE -->
+<section class="page-hero">
+  <h1>Reading Progress Tracker</h1>
+  <p>Track your reading progress and estimate your finish date.</p>
+</section>
+
+<!-- FORM -->
+<section class="tracker">
+  <form id="progressForm">
+
+    <label>Total Pages</label>
+    <input type="number" id="totalPages" required>
+
+    <label>Pages Read</label>
+    <input type="number" id="pagesRead" required>
+
+    <label>Reading Speed (pages per day)</label>
+    <input type="number" id="speed" required>
+
+    <button type="submit">Calculate Progress</button>
+  </form>
+
+  <!-- RESULTS -->
+  <div class="results" id="results">
+    <p><strong>Completion:</strong> <span id="percent">0%</span></p>
+    <p><strong>Estimated Finish:</strong> <span id="finishTime">-</span></p>
+
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <button id="saveBtn">Save Progress</button>
+  </div>
+</section>
+
+<!-- FOOTER (SAME AS HOME) -->
+<footer>
+  <div>
+    <h3>Readify</h3>
+    <p>Discover books and enjoy reading every day.</p>
+  </div>
+
+  <div>
+    <h3>Newsletter</h3>
+    <input type="email" id="newsletterEmail" placeholder="Enter email">
+    <button id="subscribeBtn">Subscribe</button>
+    <p id="msg"></p>
+  </div>
+</footer>
+
+<script src="progress.js"></script>
+</body>
+</html>

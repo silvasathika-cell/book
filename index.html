@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Readify | Home</title>
+    <link rel="icon" type="image/png" href="img/icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- STANDARD NAVBAR -->
+<nav class="navbar">
+    <h1 class="logo">Readify</h1>
+
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="book-explorer.html">Book Explorer</a></li>
+        <li><a href="progress.html">Progress Tracker</a></li>
+        <li><a href="recommender.html">Recommender</a></li>
+        <li><a href="reading-flow.html">Reading Flow</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-left">
+        <h2>Reading is Magic</h2>
+
+        <p id="quote" class="quote">
+            Books open new worlds.
+        </p>
+
+        <p id="author" class="author"></p>
+
+        <a href="book-explorer.html" class="btn">Explore Books</a>
+    </div>
+
+    <div class="hero-right">
+        <img src="img/1.jpg" alt="Library">
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about">
+    <h2>About Readify</h2>
+    <p>
+        Readify is a platform designed to encourage people of all ages to enjoy
+        reading. We provide book recommendations, reading tools, progress tracking,
+        and interactive features to make reading fun and accessible for everyone.
+    </p>
+</section>
+
+<!-- BOOKS -->
+<section class="books">
+    <h2>Books We Love</h2>
+
+   <div class="card">
+  <img src="img/2.jpg" alt="Rich Dad Poor Dad book cover">
+  <h3>Rich Dad Poor Dad</h3>
+  <p>Robert T. Kiyosaki</p>
+</div>
+
+<div class="card">
+  <img src="img/3.jpg" alt="How to Lose a Guy in 10 Days book cover">
+  <h3>How to Lose a Guy in 10 Days</h3>
+  <p>Michelle Alexander</p>
+</div>
+
+<div class="card">
+  <img src="img/4.jpg" alt="Heated Rivalry book cover">
+  <h3>Heated Rivalry</h3>
+  <p>Rachel Reid</p>
+</div>
+
+
+    <a href="book-explorer.html" class="btn">Explore More</a>
+</section>
+
+<!-- STANDARD FOOTER -->
+<footer>
+    <div>
+        <h3>Readify</h3>
+        <p>Discover books and enjoy reading every day.</p>
+    </div>
+
+    <div>
+        <h3>Newsletter</h3>
+        <input type="email" id="emailInput" placeholder="Enter email">
+        <button id="subscribeBtn">Subscribe</button>
+        <p id="newsletterMessage"></p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
